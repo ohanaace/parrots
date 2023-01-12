@@ -30,13 +30,19 @@ li{
     border-radius: 5px;
     border: 1px solid #99CEA8;
     margin: 34px;
+    position: relative;
 }
 img{
     width: 110px;
     height: 110px;
     padding: 17px;
 }
-
+.verso{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    visibility: hidden;
+}
 @media (max-width: 335px) {
     .container{
       height: 100%;
