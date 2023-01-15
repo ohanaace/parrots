@@ -38,9 +38,15 @@ li{
     transition: all .5s linear;
     transform-style: preserve-3d;
 }
+li:hover{
+    cursor: pointer;
+}
 .virada{
     
     transform: rotateY(180deg);
+}
+.virada:hover{
+    cursor: default;
 }
 img{
     width: 110px;
