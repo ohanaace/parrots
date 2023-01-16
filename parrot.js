@@ -62,29 +62,20 @@ function viraCarta(cartaVirada){
     }
     jogadas++;
     pares++;
-    
-    //criar uma class no CSS para rotacionar a carta
     primeiraCarta = undefined;
     contador = 0;
     setTimeout(gameOver, 500);
     }
-
-    //fazer um if(carta1 !== carta2)
-    //se o if for verdadeiro, remove a classe de rotação
-
-
-
 function desviraCarta(primeiraCarta, segundaCarta){
     setTimeout(()=> {
         primeiraCarta.classList.remove('virada');
         segundaCarta.classList.remove('virada');
         block = false;
     }, 1000
-    )
-
+    );
 }
 function gameOver(){
     if(pares === qtdeDecartas/2){
-        alert(`Você ganhou em ${jogadas} jogadas!`)
+        alert(`Você ganhou em ${jogadas} jogadas!`);
     }
 }
